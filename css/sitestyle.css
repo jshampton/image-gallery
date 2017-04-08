@@ -1,0 +1,140 @@
+/* ---------- GENERAL STYLING (MOBILE FIRST) ---------- */
+
+    body {
+        font-family: sans-serif;
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* ----- IMAGE GALLERY STYLING ----- */
+
+    .imageGallery {
+        margin: 0 auto;
+        padding: 0;
+        display: block;
+        max-width: 780px;
+        text-align: center;
+    }
+
+    .filtr-item {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .filtr-item p {
+        display: none;
+    }
+
+    .filtr-item img {
+        display: block;
+        width: 180px;
+        padding: 5px
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    /* ----- SEARCH FUNCTION STYLING ----- */
+
+    #searchBox {
+        margin: 0 10%;
+    }
+
+    #search {
+        margin: 0 auto;
+        font-size: 16pt;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        padding: 5px 0 5px 10px;
+        width: 300px;
+        margin: 20px auto;
+    }
+
+    /* ----- OVERLAY STYLING ----- */
+
+    #overlay {
+        background: rgba(0,0,0,0.9);
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: none;
+        text-align: center;
+    }
+
+    #overlay img {
+        margin-top: 10%;
+        width: 320px;
+    }
+
+    #overlay p {
+        color: #fff;
+        width: 300px;
+        text-align: left;
+        margin: 0 auto;
+        padding: 25px 0 0;
+    }
+
+    /* ----- OVERLAY NAV STYLING ----- */
+
+    .btnGallery {
+        color: #fff;
+        background: none;
+        border: none;
+        font-family: 'font-awesome';
+    }
+
+    #btnNext {
+        margin-left: 2%;
+        margin-top: 0;
+    }
+
+    #btnPrev {
+        margin-right: 2%;
+        margin-top: 0;
+    }
+
+/* ---------- RESPONSIVE STYLING ---------- */
+
+    /* ----- TABELT STYLING ----- */
+
+    @media screen and (min-width:700px) {
+
+        #searchBox {
+            margin: 0 35%;
+        }
+        
+    /* ----- OVERLAY STYLING ----- */
+
+
+        #overlay img {
+            margin-top: 10%;
+            width: 700px;
+        }
+
+        #overlay p {
+            width: 600px;
+            padding-top: 50px;
+        }
+
+        
+        /* ----- OVERLAY NAV STYLING ----- */
+
+
+        #btnNext {
+            float: right;
+            margin-right: 10%;
+            margin-top: 25%;
+        }
+
+        #btnPrev {
+            float: left;
+            margin-left: 10%;
+            margin-top: 25%;
+        }
+        
+    }

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+<!---------- CSS STYLESHEET LINKS ---------->
+    
+	<link rel="stylesheet" href="css/sitestyle.css" type="text/css" charset="utf-8">
+    
+    <!----- SLICK CAROUSEL STYLESHEETS ----->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+    
+    <title>Image Gallery</title>
+
+</head>
+    
+<body>
+    
+    <!----- SEARCH BOX ------>
+    
+    <div id="searchBox">
+        <label for="search">
+            <input type="text" name="search" id="search" placeholder="Search..." data-search>
+        </label>
+    </div>
+	
+    <!----- IMAGE GALLERY ------>
+    
+    <div id="imageGallery" class="filtr-container">
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="hay bales">
+            <a href="photos/01.jpg">
+                <img src="photos/thumbnails/01.jpg" alt="hay bales" title="I love hay bales. Took this snap on a drive through the countryside past some straw fields." class="photo">
+                <p>I love hay bales. Took this snap on a drive through the countryside past some straw fields.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="lake">
+            <a href="photos/02.jpg">
+                <img src="photos/thumbnails/02.jpg" alt="lake" title="The lake was so calm today. We had a great view of the snow on the mountains from here." class="photo">
+                <p>The lake was so calm today. We had a great view of the snow on the mountains from here.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="canyon">
+            <a href="photos/03.jpg">
+                <img src="photos/thumbnails/03.jpg" alt="canyon" title="I hiked to the top of the mountain and got this picture of the canyon and trees below." class="photo">
+                <p>I hiked to the top of the mountain and got this picture of the canyon and trees below.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="iceberg">
+            <a href="photos/04.jpg">
+                <img src="photos/thumbnails/04.jpg" alt="iceberg" title="It was amazing to see an iceberg up close, it was so cold but didn&apos;t snow today." class="photo">
+                <p>It was amazing to see an iceberg up close, it was so cold but didn&apos;t snow today.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="desert">
+            <a href="photos/05.jpg">
+                <img src="photos/thumbnails/05.jpg" alt="desert" title="The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons." class="photo">
+                <p>The red cliffs were beautiful. It was really hot in the desert but we did a lot of walking through the canyons.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="fall">
+            <a href="photos/06.jpg">
+                <img src="photos/thumbnails/06.jpg" alt="fall" title="Fall is coming, I love when the leaves on the trees start to change colour." class="photo">
+                <p>Fall is coming, I love when the leaves on the trees start to change colour.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="plantation">
+            <a href="photos/07.jpg">
+                <img src="photos/thumbnails/07.jpg" alt="plantation" title="I drove past this plantation yesterday, everything is so green!" class="photo">
+                <p>I drove past this plantation yesterday, everything is so green!</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="dunes">
+            <a href="photos/08.jpg">
+                <img src="photos/thumbnails/08.jpg" alt="dunes" title="My summer vacation to the Oregon Coast. I love the sandy dunes!" class="photo">
+                <p>My summer vacation to the Oregon Coast. I love the sandy dunes!</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="countryside lane">
+            <a href="photos/09.jpg">
+                <img src="photos/thumbnails/09.jpg" alt="countryside lane" title="We enjoyed a quiet stroll down this countryside lane." class="photo">
+                <p>We enjoyed a quiet stroll down this countryside lane.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="sunset">
+            <a href="photos/10.jpg">
+                <img src="photos/thumbnails/10.jpg" alt="sunset" title="Sunset at the coast! The sky turned a lovely shade of orange." class="photo">
+                <p>Sunset at the coast! The sky turned a lovely shade of orange.</p>
+            </a>
+        </div>
+		
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="cave">
+            <a href="photos/11.jpg">
+                <img src="photos/thumbnails/11.jpg" alt="cave" title="I did a tour of a cave today and the view of the landscape below was breathtaking." class="photo">
+                <p>I did a tour of a cave today and the view of the landscape below was breathtaking.</p>
+            </a>
+        </div>
+        
+        <div class="filtr-item" data-category="1" data-filter="all" data-sort="bluebells">
+            <a href="photos/12.jpg">
+                <img src="photos/thumbnails/12.jpg" alt="bluebells" title="I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in." class="photo">
+                <p>I walked through this meadow of bluebells and got a good view of the snow on the mountain before the fog came in.</p>
+            </a>
+        </div>
+	
+    </div>
+    
+<!---------- JAVASCRIPT LINKS ---------->
+    
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js" type="text/javascript" charset="utf-8"></script>
+    
+    <!----- FILTERIZR SCRIPT ----->
+    <script type="text/javascript" src="js/jquery.filterizr.min.js"></script>
+    
+    <!----- LIGHTBOX SCRIPT ----->
+    <script type="text/javascript" src="js/lightbox.js"></script>
+    
+    <!----- FILTERIZR INTITAL SCRIPT ----->
+
+    <script>
+        var filterizd = $('.filtr-container').filterizr({
+        });
+    </script>
+    
+    </body>
+    
+</html>
